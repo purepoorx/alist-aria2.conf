@@ -10,9 +10,9 @@ bash <(curl -fsSL git.io/tracker.sh) cat
 bash <(curl -fsSL git.io/tracker.sh)
 ```
 
-- 指定 Aria2 配置文件路径，比如配置文件在`/root/.aria2/aria2.conf`：
+- 指定 Aria2 配置文件路径，比如配置文件在`/opt/alist/.aria2/aria2.conf`：
 ```
-bash <(curl -fsSL git.io/tracker.sh) "/root/.aria2/aria2.conf"
+bash <(curl -fsSL git.io/tracker.sh) "/opt/alist/.aria2/aria2.conf"
 ```
 
 - 通过 RPC 方式给远程 Aria2 更新 BT tracker 列表。
@@ -22,5 +22,5 @@ bash <(curl -fsSL git.io/tracker.sh) RPC '233.233.233.233:6800' 'Secret123'
 
 - 通过 RPC 方式给本地 Aria2 更新 BT tracker 列表，并写入到 Aria2 配置文件中。
 ```
-bash <(curl -fsSL git.io/tracker.sh) "/root/.aria2/aria2.conf" RPC
+bash <(curl -fsSL git.io/tracker.sh) "/opt/alist/.aria2/aria2.conf" RPC
 ```
